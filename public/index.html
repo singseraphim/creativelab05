@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Homemade+Apple|Mr+Dafoe|Permanent+Marker|Rock+Salt|Nothing+You+Could+Do" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Letters</title>
+  </head>
+  <body>
+      
+    <div id = "container">
+    <div id = "bg"><img id = "bgpic" src = "../src/openbook.jpg" width = "100%"></div>
+    <div id="app">
+      <div id = "input">
+      <h1 id = "title">Dear Universe,</h1>
+      <form v-on:submit.prevent="addLetter">
+	<textarea class = "transparent" v-model="addedContent" placeholder="Say something interesting"></textarea>
+          <br>
+	<button class = "transparent" id = "submit" type="submit">Send</button>
+      </form>
+        </div>
+        <div id = "wrapper">
+      <div id = letterlist>
+       <h3 id = ltitle>Past Letters</h3>
+          <br>
+      <div v-for="letter in letters">
+	<div class="letter">
+	  <div class="content">
+          <br>
+	    <p>{{letter.content}}</p>
+	  </div>
+	  <div class="delete">
+	    <button v-on:click="deleteLetter(letter)" class="delete">Delete</button>
+	  </div>
+	</div>
+    <p id = "line">__________________________________</p>
+      </div>
+        </div>
+        </div>
+    </div>
+    <a id = "git" href = "https://github.com/singseraphim/creativelab05.git">Github</a>
+    </div>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js" integrity="sha256-pU9euBaEcVl8Gtg+FRYCtin2vKLN8sx5/4npZDmY2VA=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

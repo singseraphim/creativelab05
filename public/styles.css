@@ -1,0 +1,100 @@
+body {
+    background-color: #36383d;
+}
+#bg {
+    padding: 0px 50px;
+}
+#bgpic {
+    border-radius: 20px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+#input {
+    position: absolute;
+    top: 220px;
+    left: 440px;
+}
+#title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 45px;
+    margin-bottom: 14px;
+    transform: rotate(-7deg);
+}
+.transparent {
+    background: transparent;
+    border: none;
+}
+textarea {
+    font-size: 23px;
+    width: 300px;
+    height: 250px;
+    margin-left: 20px;
+    transform: rotate(-7deg);
+    line-height: 19px;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
+}
+textarea:focus {
+    outline: none;
+}
+#submit {
+    margin: 15px 190px;
+    transform: rotate(-9deg);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+}
+#submit:hover {
+    text-decoration: underline;
+}
+
+#letterlist {
+    background-color: #edeace;
+    margin: 50px;
+    text-align: center;
+    border-radius: 20px;
+    width: 700px;
+    display: inline-block;
+}
+#ltitle {
+   font-family: 'Permanent Marker', cursive;
+   font-size: 50px; 
+    text-decoration: underline;
+    font-weight: bold;
+    margin:0px;
+}
+
+.letter {
+    font-size: 23px;
+    line-height: 30px;
+    font-family: 'Nothing You Could Do', cursive;
+    margin: 0px 200px;
+}
+.delete {
+   font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    color: #edeace;
+    outline: none;
+}
+.delete:hover {
+    text-decoration: underline;
+    color: #ccc4a3;
+    outline: none;
+}
+#git {
+    color: #e8dfb9;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: none;
+    margin: 0px 50px;
+    font-size: 20px;
+}
+#git:hover {
+    text-decoration: underline;
+}
+#wrapper {
+    text-align: center;
+}
